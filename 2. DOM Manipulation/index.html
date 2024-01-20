@@ -31,12 +31,20 @@
 
         // Todo 2.1 Select the unordered list with the id "subjects-taken"
         // Resource: https://dev.to/alternate_robot/dom-selectors-in-javascript-344i
+        
+        const unorderedList = document.getElementById('subjects-taken');
+        console.log(unorderedList);
 
         // Checkpoint 2.1 What are the other ways to select elements in the DOM?
-        // Answer:
+        // Answer:document.querySelector
 
         // Todo 2.2 Set the text of the second list item to "IT102 - Python Fundamentals"
         // Resource: https://www.javascripttutorial.net/javascript-dom/javascript-get-child-element/
+        
+        const secondListItem = unorderedList.children[1];
+        secondListItem.textContent = "IT102 - Python Fundamentals";
+        console.log(secondListItem);
+
 
         // Checkpoint 3.2 What is the difference between innerText, textContent, and innerHTML. When should you use one over the other?
         // Answer:
